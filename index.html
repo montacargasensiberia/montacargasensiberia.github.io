@@ -10,36 +10,48 @@
 </head>
 <body>
   <nav id="menu">
-    <img class="menu-logo" src="./images/logo.png" alt="Montacargas" />
-
-    <input type="checkbox" name="menu-mobile-controller" id="menu-mobile-controller" />
-    <label for="menu-mobile-controller" id="menu-mobile-icon">☰</label>
-
-    <ul class="menu-list">
-      <li class="menu-item active"><a href="#hero" class="menu-link">Inicio</a></li>
-      <li class="menu-item"><a href="#laoum" class="menu-link">Servicios</a></li>
-      <li class="menu-item"><a href="#services" class="menu-link">Ubicacion</a></li>
-      <li class="menu-item"><a href="#contact" class="menu-link">Contacto</a></li>
-    </ul>
+    <div class="center">
+      <img class="menu-logo" src="./images/logo.png" alt="Montacargas" />
+      
+      <input type="checkbox" name="menu-mobile-controller" id="menu-mobile-controller" />
+      <label for="menu-mobile-controller" id="menu-mobile-icon">☰</label>
+      
+      <ul class="menu-list">
+        <li class="menu-item active">
+          <a href="#hero" class="menu-link">Inicio</a>
+        </li>
+        <li class="menu-item">
+          <a href="#laoum" class="menu-link">Servicios</a>
+        </li>
+        <li class="menu-item">
+          <a href="#services" class="menu-link">Ubicacion</a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact" class="menu-link">Contacto</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <header id="hero">
-    <div class="hero-container">
-      <h2>ALQUILER DE MONTACARGAS SERVICIO 24 HORAS</h2>
-      <p class="banner">Da clic sobre alguno de los iconos para llamarnos o escribirnos y resolveremos tus dudas al instante</p>
-      <img class="cellphone" src="./images/cellphone.png" alt="Cellphone" />
-      <a href="tel:3168539687">
-        <div class="phone">
-          <img src="./images/phone.png" alt="Phone" />
-          <p>316 853 96 87</p>
-        </div>
-      </a>
-      <a href="https://api.whatsapp.com/send?phone=34123456789">
-        <div class="whatsapp">
-          <img src="./images/wsp.png" alt="Whatsapp" />
-          <p id="laoum">316 853 96 87</p>
-        </div>
-      </a>
+    <div class="center">
+      <div class="hero-container">
+        <h2>ALQUILER DE MONTACARGAS SERVICIO 24 HORAS</h2>
+        <p class="banner">Da clic sobre alguno de los iconos para llamarnos o escribirnos y resolveremos tus dudas al instante</p>
+        <img class="cellphone" src="./images/cellphone.png" alt="Cellphone" />
+        <a href="tel:3168539687">
+          <div class="phone">
+            <img src="./images/phone.png" alt="Phone" />
+            <p>316 853 96 87</p>
+          </div>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=34123456789">
+          <div class="whatsapp">
+            <img src="./images/wsp.png" alt="Whatsapp" />
+            <p id="laoum">316 853 96 87</p>
+          </div>
+        </a>
+      </div>
     </div>
   </header>
   
@@ -61,9 +73,6 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63622.35904962072!2d-74.06215231253854!3d4.700817350444558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63f5f7435443cb7!2sGoogle!5e0!3m2!1sen!2sco!4v1518156830586"
           width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-      <div class="mapa-mobile">
-        <img src="./images/map.png" alt="Mapa" />
-      </div>
       <div class="mapa-description">
         <p>Autopista Medellín km 1.5</p>
         <p>Parque Agroindustrial de Occidente</p>
@@ -83,7 +92,7 @@
     <form action="https://formspree.io/info@montacargasensiberia.com" method="POST">
       <input type="text" name="name" placeholder="Nombre" />
       <input type="email" name="_replyto" placeholder="Email" />
-      <input type="Celular" name="phone" placeholder="phone" />
+      <input type="Celular" name="phone" placeholder="Telefono" />
       <input type="text" name="_subject" placeholder="Asunto" />
       <textarea name="message" placeholder="Mensaje"></textarea>
       <button type="submit">Enviar</button>
@@ -93,20 +102,20 @@
   <footer id="footer">
     <div class="icon">
       <img src="./images/contacto1.png" alt="1">
-      <p>308 96 58</p>
+      <p><a href="tel:0313089658">031 308 96 58</a></p>
     </div>
     <div class="icon">
       <img src="./images/contacto2.png" alt="2">
-      <p>312 573 60 05</p>
-      <p>316 853 96 87</p>
+      <p><a href="tel:3125736005">312 573 60 05</a></p>
+      <p><a href="tel:3168539687">316 853 96 87</a></p>
     </div>
     <div class="icon">
       <img src="./images/contacto3.png" alt="3">
-      <p>ventas@montacargasensiveria.com</p>
+      <a href="mailto:ventas@montacargasensiveria.com"><p>ventas@montacargasensiveria.com</p></a>
     </div>
     <div class="icon">
       <img src="./images/contacto4.png" alt="4">
-      <p>montacargassensiveria</p>
+      <p><a target="_blank" href="//facebook.com/montacargassensiveria">montacargassensiveria</a></p>
     </div>
   </footer>
 
