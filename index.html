@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./css/main.css" rel="stylesheet" />
+  <title>Sitio Montacargas</title>
+</head>
+<body>
+  <nav id="menu">
+    <img class="menu-logo" src="./images/logo.png" alt="Montacargas" />
+
+    <input type="checkbox" name="menu-mobile-controller" id="menu-mobile-controller" />
+    <label for="menu-mobile-controller" id="menu-mobile-icon">☰</label>
+
+    <ul class="menu-list">
+      <li class="menu-item active"><a href="#hero" class="menu-link">Inicio</a></li>
+      <li class="menu-item"><a href="#laoum" class="menu-link">Servicios</a></li>
+      <li class="menu-item"><a href="#services" class="menu-link">Ubicacion</a></li>
+      <li class="menu-item"><a href="#contact" class="menu-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header id="hero">
+    <div class="hero-container">
+      <h2>ALQUILER DE MONTACARGAS SERVICIO 24 HORAS</h2>
+      <p class="banner">Da clic sobre alguno de los iconos para llamarnos o escribirnos y resolveremos tus dudas al instante</p>
+      <img class="cellphone" src="./images/cellphone.png" alt="Cellphone" />
+      <a href="tel:3168539687">
+        <div class="phone">
+          <img src="./images/phone.png" alt="Phone" />
+          <p>316 853 96 87</p>
+        </div>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=34123456789">
+        <div class="whatsapp">
+          <img src="./images/wsp.png" alt="Whatsapp" />
+          <p id="laoum">316 853 96 87</p>
+        </div>
+      </a>
+    </div>
+  </header>
+  
+  <section id="info">
+    <div id="services" class="services">
+      <div class="service">
+        <img src="./images/servicios1.png" alt="Servicio 1">
+      </div>
+      <div class="service">
+        <img src="./images/servicios2.png" alt="Servicio 2">
+      </div>
+      <div class="service">
+        <img src="./images/servicios3.png" alt="Servicio 3">
+      </div>
+    </div>
+
+    <div id="map" class="map">
+      <div class="mapa-desktop">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63622.35904962072!2d-74.06215231253854!3d4.700817350444558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63f5f7435443cb7!2sGoogle!5e0!3m2!1sen!2sco!4v1518156830586"
+          width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="mapa-mobile">
+        <img src="./images/map.png" alt="Mapa" />
+      </div>
+      <div class="mapa-description">
+        <p>Autopista Medellín km 1.5</p>
+        <p>Parque Agroindustrial de Occidente</p>
+        <p>Local 1063</p>
+        <p>SIBERIA</p>
+        <div class="waze">
+          <p>Quieres saber como llegar?</p>
+          <img src="./images/waze.png" alt="Waze">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <img src="./images/contacto.png" alt="Contacto" />
+    <p>Tu mensaje es muy importante, dejános tus datos y lo más pronto posible nos contactaremos contigo.</p>
+    <form action="https://formspree.io/info@montacargasensiberia.com" method="POST">
+      <input type="text" name="name" placeholder="Nombre" />
+      <input type="email" name="_replyto" placeholder="Email" />
+      <input type="Celular" name="phone" placeholder="phone" />
+      <input type="text" name="_subject" placeholder="Asunto" />
+      <textarea name="message" placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer id="footer">
+    <div class="icon">
+      <img src="./images/contacto1.png" alt="1">
+      <p>308 96 58</p>
+    </div>
+    <div class="icon">
+      <img src="./images/contacto2.png" alt="2">
+      <p>312 573 60 05</p>
+      <p>316 853 96 87</p>
+    </div>
+    <div class="icon">
+      <img src="./images/contacto3.png" alt="3">
+      <p>ventas@montacargasensiveria.com</p>
+    </div>
+    <div class="icon">
+      <img src="./images/contacto4.png" alt="4">
+      <p>montacargassensiveria</p>
+    </div>
+  </footer>
+
+  <div class="chatea">
+    Chatea con nosotros
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    var limit = Math.min(document.body.scrollHeight, document.body.offsetHeight,
+        document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight)
+    var items = document.querySelectorAll(".menu-item")
+    var links = document.querySelectorAll(".menu-link")
+    var hero = getOffsetTop(document.getElementById('hero'))
+    var info = getOffsetTop(document.getElementById('info'))
+    var services = getOffsetTop(document.getElementById('services')) - info
+    var map = getOffsetTop(document.getElementById('map')) - info + 100
+    var contact = getOffsetTop(document.getElementById('contact')) - 20
+    
+    function getOffsetTop(elem) {
+        var offsetTop = 0;
+        do {
+          if (!isNaN(elem.offsetTop)) {
+            offsetTop += elem.offsetTop;
+          }
+        } while (elem = elem.offsetParent);
+        return offsetTop;
+      }
+    
+    window.onscroll = function () {
+      var body = window.scrollY;
+      console.log({
+        body,
+        hero,
+        services,
+        map,
+        contact,
+      })
+
+      if (body > contact || body >= limit) {
+        document.getElementById("menu").className = "active";
+        items[0].classList.remove("active");
+        items[1].classList.remove("active");
+        items[2].classList.remove("active");
+        items[3].classList.add("active");
+      } else if (body > map) {
+        document.getElementById("menu").className = "active";
+        items[0].classList.remove("active");
+        items[1].classList.remove("active");
+        items[2].classList.add("active");
+        items[3].classList.remove("active");
+      } else if (body > services) {
+        document.getElementById("menu").className = "active";
+        items[0].classList.remove("active");
+        items[1].classList.add("active");
+        items[2].classList.remove("active");
+        items[3].classList.remove("active");
+      } else {
+        console.log('always')
+        document.getElementById("menu").className = "";
+        items[0].classList.add("active");
+        items[1].classList.remove("active");
+        items[2].classList.remove("active");
+        items[3].classList.remove("active");
+      } 
+    }
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    });
+  </script>
+</body>
+</html>
