@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 95%;
+  margin: auto;
 }
 
 .menu-logo { height: 60px; }
@@ -122,7 +123,7 @@ body {
 /* Hero */
 #hero {
   background-image: url(../images/bg-header.png);
-  background-position: -75px 0px;
+  /* background-position: -75px 0px; */
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
@@ -255,6 +256,7 @@ body {
   .services {
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding: 20px 40px;
   }
   .service {
     max-width: 30%;
@@ -316,7 +318,7 @@ input, textarea {
   border-radius: 20px;
   width: 90%;
   margin: 0 auto 15px;
-  padding: 10px 10px 10px 15px;
+  padding: 15px 10px 15px 15px;
 }
 textarea { min-height: 150px; }
 
@@ -347,7 +349,7 @@ button {
   input, textarea {
     margin: 0 auto 2% !important;
     width: 80%;
-    padding: 7.5px;
+    padding: 12.5px 17.5px;
   }
   textarea { min-height: 100px; padding: 12.5px; }
 }
@@ -375,23 +377,19 @@ footer a {
 footer a:hover { text-decoration: underline; }
 
 .icon {
-  width: 40%;
-  margin: 5%;
+  width: 80%;
+  margin: 5% 0;
   text-align: center;
   font-size: 13px;
+  min-width: 120px;
 }
 
-.icon:nth-child(3) {
-  width: 50%;
-}
-.icon:last-child {
-  width: 30%;
+@media screen and (min-width: 768px) {  
+  .icon { width: 25%; }
 }
 
 @media screen and (min-width: 768px) {
-  footer {
-    flex-wrap: nowrap;
-  }
+  .icon { width: 25%; }
 }
 
 .chatea {
