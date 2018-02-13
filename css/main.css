@@ -276,7 +276,7 @@ body {
   .map {
     display: flex;
     margin: 50px auto 0;
-    max-width: 90%;
+    /* max-width: 90%; */
     justify-content: center;
     align-items: center;
   }
