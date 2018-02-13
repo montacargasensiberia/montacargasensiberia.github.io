@@ -385,10 +385,10 @@ footer a:hover { text-decoration: underline; }
 }
 
 @media screen and (min-width: 768px) {  
-  .icon { width: 25%; }
+  .icon { width: 50%; }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .icon { width: 25%; }
 }
 
