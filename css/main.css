@@ -325,6 +325,7 @@ input, textarea {
   width: 90%;
   margin: 0 auto 15px;
   padding: 15px 10px 15px 15px;
+  font-size: 15px;
 }
 textarea { min-height: 150px; }
 
