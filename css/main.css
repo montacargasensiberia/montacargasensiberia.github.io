@@ -387,7 +387,7 @@ footer a:hover { text-decoration: underline; }
   width: 80%;
   margin: 5% 0;
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
   min-width: 120px;
 }
 
@@ -397,7 +397,6 @@ footer a:hover { text-decoration: underline; }
 
 @media screen and (min-width: 1024px) {
   .icon { width: 25%; }
-  font-size: 18px;
 }
 
 .chatea {
