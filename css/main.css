@@ -129,7 +129,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
-  font-size: 15px;
+  font-size: 17px;
   height: 70vh;
   text-align: right;
   max-height: 550px;
@@ -283,6 +283,7 @@ body {
   .mapa-description {
     width: 40%;
     text-align: left;
+    font-size: 18px;
   }
   .waze {
     text-align: left;
@@ -297,6 +298,7 @@ body {
   align-items: center;
   font-family: Gotham-Light;
   flex-wrap: wrap;
+  font-size: 18px;
 }
 
 #contact p {
@@ -354,6 +356,7 @@ button {
     margin: 0 auto 2% !important;
     width: 80%;
     padding: 12.5px 17.5px;
+    font-size: 15px;
   }
   textarea { min-height: 100px; padding: 12.5px; }
 }
@@ -394,6 +397,7 @@ footer a:hover { text-decoration: underline; }
 
 @media screen and (min-width: 1024px) {
   .icon { width: 25%; }
+  font-size: 18px;
 }
 
 .chatea {
