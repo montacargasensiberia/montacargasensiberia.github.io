@@ -363,7 +363,7 @@ button {
     margin-top: -85px;
   }
 
-  form { width: 45%; }
+  form { width: 45%; margin: -40px 0 60px; }
 
   input, textarea {
     margin: 0 auto 2% !important;
