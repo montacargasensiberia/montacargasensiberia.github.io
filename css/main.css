@@ -316,13 +316,14 @@ body {
 #contact .bx-viewport {
   height: 260px;
 }
-#contact .slider {
-  height: 260px;
-}
+#contact .slider { height: 260px; }
+#contact .slider > div { width: 100% !important; }
 
-#contact .slider > div {
-  width: 100% !important;
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+  bottom: -22px;
 }
+.bx-wrapper .bx-pager-item { opacity: .7; }
+
 
 form {
   display: flex;
@@ -333,6 +334,7 @@ form {
 
 input, textarea {
   border: 1px solid #ccc;
+  outline: none;
   border-radius: 20px;
   width: 90%;
   margin: 0 auto 15px;
@@ -341,8 +343,13 @@ input, textarea {
 }
 textarea { min-height: 150px; }
 
+input:hover, textarea:hover {
+  border-color: #FFDE17;
+}
+
 button {
   width: 200px;
+  border: none;
   margin: 0 auto;
   background-color: #FFDE17;
   padding: 10px 15px;
