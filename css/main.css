@@ -309,7 +309,7 @@ body {
 
 #contact .bx-wrapper {
   width: 100%;
-  max-width: 100% !important;
+  max-width: 590px !important;
   border-radius: 0;
 }
 #contact .bx-viewport {
