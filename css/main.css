@@ -306,7 +306,7 @@ body {
   text-align: center;
   margin: 40px auto;
 }
-#contact img {
+#contact .bx-wrapper {
   width: 110%;
   margin-left: -5%;
   border-radius: 0;
