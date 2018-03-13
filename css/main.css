@@ -311,6 +311,7 @@ body {
   width: 100%;
   max-width: 590px !important;
   border-radius: 0;
+  box-shadow: none;
 }
 #contact .bx-viewport {
   height: 260px;
