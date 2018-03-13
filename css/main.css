@@ -355,11 +355,12 @@ button {
   #contact p {
     order: -1;
     margin-top: 0;
+    margin-bottom: 60px;
   }
 
   #contact .bx-wrapper {
     width: 50%;
-    margin-top: -20px;
+    margin-top: -80px;
   }
 
   form { width: 45%; }
