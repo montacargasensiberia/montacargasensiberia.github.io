@@ -310,8 +310,17 @@ body {
 #contact .bx-wrapper {
   width: 100%;
   max-width: 100% !important;
-  margin-left: -5%;
   border-radius: 0;
+}
+#contact .bx-viewport {
+  height: 260px;
+}
+#contact .slider {
+  height: 260px;
+}
+
+#contact .slider > div {
+  width: 100% !important;
 }
 
 form {
