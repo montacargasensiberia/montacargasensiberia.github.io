@@ -7,6 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="google-site-verification" content="MxNhIyROAZtQnY8OHXjh05ODIygDxpz9dMXcbY8mf-M" />
   <link href="./css/main.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
+  
   <title>Sitio Montacargas</title>
 </head>
 <body>
@@ -96,7 +107,11 @@
   </section>
 
   <section id="contact">
-    <img src="./images/contacto.png" alt="Contacto" />
+    <div class="slider">
+      <div><img src="./images/contacto.png" alt="Contacto" /></div>
+      <div><img src="./images/contacto.png" alt="Contacto" /></div>
+    </div>
+    
     <p>Tu mensaje es muy importante, déjanos tus datos y lo más pronto posible nos contactaremos contigo.</p>
     <form action="https://formspree.io/contacto@montacargasensiberia.com" method="POST">
       <input type="text" name="name" placeholder="Nombre" />
