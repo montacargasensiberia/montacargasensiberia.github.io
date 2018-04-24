@@ -172,14 +172,6 @@
     
     window.onscroll = function () {
       var body = window.scrollY;
-      console.log({
-        body,
-        hero,
-        services,
-        map,
-        contact,
-      })
-
       if (body > contact || body >= limit) {
         document.getElementById("menu").className = "active";
         items[0].classList.remove("active");
@@ -199,7 +191,6 @@
         items[2].classList.remove("active");
         items[3].classList.remove("active");
       } else {
-        console.log('always')
         document.getElementById("menu").className = "";
         items[0].classList.add("active");
         items[1].classList.remove("active");
@@ -213,6 +204,13 @@
       $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
       }, 500);
+    });
+
+    // This line closes the mobile menu when an item is selected
+    $(document).ready(function(){
+      $('.menu-list .menu-item').on('click', function(){
+        $('#menu-mobile-controller:checked').prop('checked', false);
+      });
     });
   </script>
   
